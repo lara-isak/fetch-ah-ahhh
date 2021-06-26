@@ -1,0 +1,1 @@
+console.log('Hello 8-bit world!');
