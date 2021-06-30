@@ -1,4 +1,5 @@
 $primary-color: #FFDD00;
+$secondary-color:#ff48c4;
 
 * {
   margin: 0;
@@ -8,4 +9,19 @@ $primary-color: #FFDD00;
 
 body {
   background-color: $primary-color;
+  margin: 0 auto;
+  max-width: 56em;
+  padding: 1em;
+}
+
+.blogPost {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-rows: minmax(150px, auto);
+  grid-gap: 1em;
+
+  div {
+    border: 1px solid $secondary-color;
+
+  }
 }
