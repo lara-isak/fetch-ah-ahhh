@@ -22,13 +22,13 @@ body {
   grid-gap: 1em;
 
   div {
+    border: 1px solid $secondary-color;
+    flex-direction: column;
+    justify-content: start;
     display: none;
 
     &:nth-child(-n+10) {
-      border: 1px solid $secondary-color;
       display: flex;
-      flex-direction: column;
-      justify-content: start;
     }
 
     h1 {

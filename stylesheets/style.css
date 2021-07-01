@@ -22,14 +22,7 @@ body {
 }
 
 .blogPost div {
-  display: none;
-}
-
-.blogPost div:nth-child(-n+10) {
   border: 1px solid #ff48c4;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -37,6 +30,13 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
+  display: none;
+}
+
+.blogPost div:nth-child(-n+10) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .blogPost div h1 {
