@@ -1,6 +1,8 @@
 const blogPost = document.querySelector('.blogPost');
-const url = 'https://jsonplaceholder.typicode.com/posts';
+const url = 'https://jsonplaceholder.typicode.com/posts?userId=1&userId=2&userId=3';
 let posts = [];
+let currentPosts = 10;
+const loadBtn = document.querySelector('.loadMore');
 
 async function getBlogPost() {
   const response = await fetch(url);
@@ -27,6 +29,21 @@ async function getBlogPost() {
   console.log(blogPost);
 };
 
-
 getBlogPost();
+
+
+loadBtn.addEventListener('click', () => {
+  const postList = [...document.querySelectorAll('.blogPost div')];
+
+  for(let i = currentPosts; i < currentPosts + 10; i++) {
+    if(postList[i]) {
+      postList[i].style.display = 'flex';
+    }
+  }
+  currentPosts += 10;
+
+  if(currentPosts >= postList.length) {
+    loadBtn.style.display = 'none';
+  }
+});
 
