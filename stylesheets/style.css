@@ -22,6 +22,10 @@ body {
 }
 
 .blogPost div {
+  display: none;
+}
+
+.blogPost div:nth-child(-n+10) {
   border: 1px solid #ff48c4;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -58,5 +62,15 @@ body {
 
 .blogPost div p:last-of-type {
   margin: auto 0.5em 0.5em 0.5em;
+}
+
+.loadMore {
+  display: block;
+  margin: 2em auto;
+  background-color: #2bd1fc;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2em;
 }
 /*# sourceMappingURL=style.css.map */

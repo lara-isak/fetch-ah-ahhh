@@ -1,5 +1,6 @@
 $primary-color: #FFDD00;
 $secondary-color:#ff48c4;
+$button-color: #2bd1fc;
 
 * {
   margin: 0;
@@ -21,10 +22,14 @@ body {
   grid-gap: 1em;
 
   div {
-    border: 1px solid $secondary-color;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
+    display: none;
+
+    &:nth-child(-n+10) {
+      border: 1px solid $secondary-color;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+    }
 
     h1 {
       font-size: 1.5em;
@@ -50,6 +55,15 @@ body {
     p:last-of-type {
       margin: auto 0.5em 0.5em 0.5em;
     }
-
   }
+}
+
+.loadMore {
+  display: block;
+  margin: 2em auto;
+  background-color: $button-color;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2em;
 }
