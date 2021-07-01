@@ -24,4 +24,17 @@ body {
 .blogPost div {
   border: 1px solid #ff48c4;
 }
+
+.blogPost div h1 {
+  font-size: 1.5em;
+  margin: 0.2em;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.blogPost div h1::first-letter {
+  text-transform: capitalize;
+}
 /*# sourceMappingURL=style.css.map */
