@@ -22,10 +22,13 @@ body {
 
   div {
     border: 1px solid $secondary-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
 
     h1 {
       font-size: 1.5em;
-      margin: 0.2em;
+      margin: 0.5em;
       text-align: center;
       overflow: hidden;
       white-space: nowrap;
@@ -35,5 +38,18 @@ body {
         text-transform: capitalize;
       }
     }
+
+    p:first-of-type {
+      margin: 1em 0.5em;
+
+      &::first-letter {
+        text-transform: capitalize;
+      }
+    }
+
+    p:last-of-type {
+      margin: auto 0.5em 0.5em 0.5em;
+    }
+
   }
 }
