@@ -10,8 +10,13 @@ $button-color: #2bd1fc;
 
 body {
   background-color: $primary-color;
+  background: url('/img/space.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: 0 auto;
   max-width: 56em;
+  height: 100%;
   padding: 1em;
 }
 
@@ -26,6 +31,7 @@ body {
     flex-direction: column;
     justify-content: start;
     display: none;
+    color: #fff;
 
     &:nth-child(-n+10) {
       display: flex;

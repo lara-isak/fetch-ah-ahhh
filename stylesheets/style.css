@@ -7,8 +7,13 @@
 
 body {
   background-color: #FFDD00;
+  background: url("/img/space.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: 0 auto;
   max-width: 56em;
+  height: 100%;
   padding: 1em;
 }
 
@@ -31,6 +36,7 @@ body {
       -ms-flex-pack: start;
           justify-content: start;
   display: none;
+  color: #fff;
 }
 
 .blogPost div:nth-child(-n+10) {
