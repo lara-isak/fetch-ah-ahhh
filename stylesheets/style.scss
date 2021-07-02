@@ -1,5 +1,5 @@
-$primary-color: #FFDD00;
-$secondary-color:#9B69E9;
+$title-color: #bc75f9;
+$secondary-color:#535eeb;
 $button-color: #2bd1fc;
 $header-font: 'VT323', monospace;
 $text-font: 'Roboto Mono', monospace;
@@ -11,7 +11,7 @@ $text-font: 'Roboto Mono', monospace;
 }
 
 body {
-  background-color: $primary-color;
+  background-color: $title-color;
   background: url('/img/space.png') center / cover no-repeat;
   margin: 0 auto;
   max-width: 60em;
@@ -28,7 +28,7 @@ header {
   h1 {
     font-size: 6em;
     margin: 0.6em 0;
-    text-shadow: 0 0 5px #fff, 0 0 10px $secondary-color, 0 0 15px $secondary-color, 0 0 20px $secondary-color, 0 0 25px $secondary-color, 0 0 30px $secondary-color;
+    text-shadow: 0 0 5px #fff, 0 0 10px $title-color, 0 0 15px $title-color, 0 0 20px $title-color, 0 0 25px $title-color, 0 0 30px $title-color;
   }
 }
 
@@ -83,11 +83,30 @@ header {
 
 .loadMore {
   display: block;
+  position: relative;
   margin: 2em auto;
-  background-color: $button-color;
   color: #fff;
-  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid #fff;
+  cursor: pointer;
   padding: 15px 30px;
   font-size: 1.2em;
   font-family: inherit;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background-color: $button-color;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: 0.2s;
+  }
+
+  &:hover::after {
+    top: 0px;
+    left: 0px;
+  }
 }
