@@ -7,7 +7,7 @@
 
 body {
   background-color: #bc75f9;
-  background: url("/img/space.png") center/cover no-repeat;
+  background: url("https://github.com/lara-isak/fetch-ah-ahhh/blob/main/img/space.png?raw=true") center/cover no-repeat;
   margin: 0 auto;
   max-width: 60em;
   height: 100%;
