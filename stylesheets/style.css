@@ -50,7 +50,7 @@ header h1 {
   background-color: rgba(30, 30, 31, 0.7);
 }
 
-.blogPost div:nth-child(-n+10) {
+.blogPost div:nth-child(-n+6) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
