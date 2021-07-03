@@ -1,6 +1,6 @@
 $title-color: #bc75f9;
-$secondary-color:#535eeb;
-$button-color: #2bd1fc;
+$secondary-color:#95389E;
+$button-color: #43D8C9;
 $header-font: 'VT323', monospace;
 $text-font: 'Roboto Mono', monospace;
 
@@ -44,13 +44,14 @@ header {
     justify-content: start;
     display: none;
     color: #fff;
+    background-color: rgba(30, 30, 31, 0.7);
 
     &:nth-child(-n+10) {
       display: flex;
     }
 
     &:hover {
-      box-shadow: 0 0 14px $secondary-color;
+      box-shadow: 0 0 30px $secondary-color;
       cursor: pointer;
     }
 
@@ -75,6 +76,10 @@ header {
       }
     }
 
+    p:nth-child(2) {
+      color: rgb(231, 231, 231);
+    }
+
     p:last-of-type {
       margin: auto 0.5em 0.5em 0.5em;
     }
@@ -92,6 +97,7 @@ header {
   padding: 15px 30px;
   font-size: 1.2em;
   font-family: inherit;
+  font-weight: bold;
 
   &::after {
     content: '';
