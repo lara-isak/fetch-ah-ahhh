@@ -1,6 +1,6 @@
 # fetch-ah-ahhh
 
-Fetch-Ah-Ahhh is an 80s inspired blog display page created with **HTML, SCSS & JavaScript**.
+Fetch-Ah-Ahhh is an 80s inspired blog display page created with **HTML, Sass & JavaScript**.
 
 Page uses fake blog posts fetched from the [JSONPlaceholder](https://jsonplaceholder.typicode.com/), a free online REST API and you can check it out [here](https://lara-isak.github.io/fetch-ah-ahhh/).
 
