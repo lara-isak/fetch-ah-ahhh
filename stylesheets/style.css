@@ -36,7 +36,7 @@ header h1 {
   grid-gap: 2em;
 }
 
-.blogPost div {
+.blogPost article {
   border: 2px solid #95389E;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -50,19 +50,19 @@ header h1 {
   background-color: rgba(30, 30, 31, 0.7);
 }
 
-.blogPost div:nth-child(-n+6) {
+.blogPost article:nth-child(-n+6) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.blogPost div:hover {
+.blogPost article:hover {
   -webkit-box-shadow: 0 0 30px #95389E;
           box-shadow: 0 0 30px #95389E;
   cursor: pointer;
 }
 
-.blogPost div h1 {
+.blogPost article h2 {
   font-size: 1.5em;
   margin: 0.5em;
   text-align: center;
@@ -71,23 +71,23 @@ header h1 {
   text-overflow: ellipsis;
 }
 
-.blogPost div h1::first-letter {
+.blogPost article h2::first-letter {
   text-transform: capitalize;
 }
 
-.blogPost div p:first-of-type {
+.blogPost article p:first-of-type {
   margin: 1em 0.5em;
 }
 
-.blogPost div p:first-of-type::first-letter {
+.blogPost article p:first-of-type::first-letter {
   text-transform: capitalize;
 }
 
-.blogPost div p:nth-child(2) {
+.blogPost article p:nth-child(2) {
   color: #e7e7e7;
 }
 
-.blogPost div p:last-of-type {
+.blogPost article p:last-of-type {
   margin: auto 0.5em 0.5em 0.5em;
 }
 

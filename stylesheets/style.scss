@@ -38,7 +38,7 @@ header {
   grid-auto-rows: minmax(150px, auto);
   grid-gap: 2em;
 
-  div {
+  article {
     border: 2px solid $secondary-color;
     flex-direction: column;
     justify-content: start;
@@ -55,7 +55,7 @@ header {
       cursor: pointer;
     }
 
-    h1 {
+    h2 {
       font-size: 1.5em;
       margin: 0.5em;
       text-align: center;
