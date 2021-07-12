@@ -118,8 +118,13 @@ header h1 {
   transition: 0.2s;
 }
 
-.loadMore:hover::after {
+.loadMore:hover::after, .loadMore:focus::after {
   top: 0px;
   left: 0px;
+}
+
+.loadMore:focus, .loadMore:focus-visible {
+  color: #fff;
+  outline: none;
 }
 /*# sourceMappingURL=style.css.map */

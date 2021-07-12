@@ -111,8 +111,15 @@ header {
     transition: 0.2s;
   }
 
-  &:hover::after {
+  &:hover::after,
+  &:focus::after {
     top: 0px;
     left: 0px;
+  }
+
+  &:focus,
+  &:focus-visible {
+    color: #fff;
+    outline: none;      
   }
 }
