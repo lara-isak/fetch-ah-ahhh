@@ -1,8 +1,8 @@
-const blogPost = document.querySelector('.blogPost');
+const blogPost = document.querySelector('[data-id="blog-post"]');
 const url = 'https://jsonplaceholder.typicode.com/posts?userId=1&userId=2&userId=3';
 let posts = [];
 let currentPosts = 6;
-const loadBtn = document.querySelector('.loadMore');
+const loadBtn = document.querySelector('[data-id="load-more"]');
 
 async function getBlogPost() {
   const response = await fetch(url);
@@ -33,7 +33,7 @@ getBlogPost();
 
 
 loadBtn.addEventListener('click', () => {
-  let displayedPosts = document.querySelectorAll('.blogPost article');
+  let displayedPosts = document.querySelectorAll('[data-id="blog-post"] article');
   const postList = [...displayedPosts];
 
   for(let i = currentPosts; i < currentPosts + 6; i++) {
